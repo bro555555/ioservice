@@ -4,25 +4,32 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Configuration;
+using ioservice.Models;
 
 namespace ioservice.Controllers
 {
     public class TransportAllResourcesController : ApiController
     {
-        // GET api/values
-        public string Get()
+        public static readonly string mongoUrl = ConfigurationManager.AppSettings["MONGOLAB_URI"];
+        public static readonly string mongoDatabase = "appharbor_de1b58c9-5aa7-46b7-86eb-47d563f78b62";
+
+        private static MongoDB.Driver.MongoDatabase ConnectToDatabase()
         {
-            string scr = "var script = document.createElement('script');"+
-"script.setAttribute('src', '//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js');"+
-"document.body.appendChild(script);"+
-"setInterval(function transport(){"+
-	"xajax_transport_all(containersStuff.findContaner({saveName:'transportation',title:'Транспортни мисии'}));"+
-    "setTimeout(function(){"+
-    	"$(/*'#messagebox1 */'div.ajax-window div.visual-loading.clear div button.button-v2').click();"+
-        "$(/*'div#dragDiv1.contParent */'div.ajax-window /*table tbody tr td h3.header.feedback-active */a#closeMe1.closeAjaxWindow')[0].click();"+
-    "},2000);"+
-"},300000);";
-            return (scr);
+            MongoDB.Driver.MongoClient client = new MongoDB.Driver.MongoClient(mongoUrl);
+            var server = client.GetServer();
+            var db = server.GetDatabase(mongoDatabase);
+            return db;
+        }
+
+        // GET api/values
+        public IEnumerable<ScriptModel> Get()
+        {
+            var db = ConnectToDatabase();
+            var scripts = db.GetCollection("scripts");
+            var query = from script in scripts.FindAllAs<ScriptModel>() select script;
+            return query.ToList();
+
         }
 
         // GET api/values/5
@@ -32,8 +39,11 @@ namespace ioservice.Controllers
         }
 
         // POST api/values
-        public void Post([FromBody]string value)
+        public void Post([FromBody]ScriptModel script)
         {
+            var db = ConnectToDatabase();
+            var scripts = db.GetCollection("Scripts");
+            scripts.Insert(script);
         }
 
         // PUT api/values/5
