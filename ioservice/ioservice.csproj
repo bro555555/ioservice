@@ -129,6 +129,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\TransportResources\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Packages\TaskHelpers.Sources.0.2\TaskHelpers.cs" />
@@ -152,7 +153,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\TransportAllResourcesController.cs" />
+    <Compile Include="Controllers\transportAllResourcesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

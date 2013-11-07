@@ -9,7 +9,7 @@ using ioservice.Models;
 
 namespace ioservice.Controllers
 {
-    public class TransportAllResourcesController : ApiController
+    public class transportAllResourcesController : ApiController
     {
         public static readonly string mongoUrl = ConfigurationManager.AppSettings["MONGOLAB_URI"];
         public static readonly string mongoDatabase = "appharbor_de1b58c9-5aa7-46b7-86eb-47d563f78b62";
