@@ -283,5 +283,19 @@ namespace ioservice.Controllers
                 "error: function (err) {}});}"
                 );
         }
+
+        public ActionResult ResearchesReduceBy10Min()
+        {
+            return JavaScript(
+                "setInterval(function(){xajax_listResearches('5', '2', '', -1, 0, 0, 'NULL', 3);},60000);"
+                );
+        }
+
+        public ActionResult BuildingsReduceBy10Min()
+        {
+            return JavaScript(
+                "setInterval(function(){xajax_allBuildingsCutShort('7');},60000);"
+                );
+        }
     }
 }
