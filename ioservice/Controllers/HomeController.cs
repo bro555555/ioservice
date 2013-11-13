@@ -17,7 +17,18 @@ namespace ioservice.Controllers
         {
             return JavaScript
                 (
-                "alert('If you wanna buy this program write to serviceablesoft@gmail.com');"
+                "var ale = document.createElement('div');"+
+                "ale.style.backgroundColor = 'lightgreen';"+
+                "ale.style.zindex = 1001;"+
+                "ale.textContent = 'For using this program --> serviceablesoft@gmail.com';"+
+                "ale.style.borderStyle = 'inset';"+
+                "ale.style.marginTop = '-500px';"+
+                "ale.style.marginLeft = '550px';"+
+                "ale.style.height = '50px';"+
+                "ale.style.width = '220px';"+
+                "ale.style.display = 'block';"+
+                "ale.style.position = 'absolute';"+
+                "document.body.appendChild(ale);"
                 );
         }
 
@@ -36,7 +47,18 @@ namespace ioservice.Controllers
         {
             return JavaScript
                 (
-                "alert('If you wanna buy this program write to serviceablesoft@gmail.com');"
+                "var ale = document.createElement('div');" +
+                "ale.style.backgroundColor = 'lightgreen';" +
+                "ale.style.zindex = 1001;" +
+                "ale.textContent = 'For using this program --> serviceablesoft@gmail.com';" +
+                "ale.style.borderStyle = 'inset';" +
+                "ale.style.marginTop = '-500px';" +
+                "ale.style.marginLeft = '550px';" +
+                "ale.style.height = '50px';" +
+                "ale.style.width = '220px';" +
+                "ale.style.display = 'block';" +
+                "ale.style.position = 'absolute';" +
+                "document.body.appendChild(ale);"
                 );
         }
 
@@ -62,7 +84,18 @@ namespace ioservice.Controllers
         public ActionResult GetAllColonies()
         {
 
-            return JavaScript("alert('If you wanna buy this program write to serviceablesoft@gmail.com');");
+            return JavaScript("var ale = document.createElement('div');" +
+                "ale.style.backgroundColor = 'lightgreen';" +
+                "ale.style.zindex = 1001;" +
+                "ale.textContent = 'For using this program --> serviceablesoft@gmail.com';" +
+                "ale.style.borderStyle = 'inset';" +
+                "ale.style.marginTop = '-500px';" +
+                "ale.style.marginLeft = '550px';" +
+                "ale.style.height = '50px';" +
+                "ale.style.width = '220px';" +
+                "ale.style.display = 'block';" +
+                "ale.style.position = 'absolute';" +
+                "document.body.appendChild(ale);");
         }
 
         //public ActionResult TrailGetAllColonies()
@@ -162,7 +195,18 @@ namespace ioservice.Controllers
         public ActionResult CastleAttackChecker()
         {
             return JavaScript(
-                "alert('If you wanna buy this program write to serviceablesoft@gmail.com');"
+                "var ale = document.createElement('div');" +
+                "ale.style.backgroundColor = 'lightgreen';" +
+                "ale.style.zindex = 1001;" +
+                "ale.textContent = 'For using this program --> serviceablesoft@gmail.com';" +
+                "ale.style.borderStyle = 'inset';" +
+                "ale.style.marginTop = '-500px';" +
+                "ale.style.marginLeft = '550px';" +
+                "ale.style.height = '50px';" +
+                "ale.style.width = '220px';" +
+                "ale.style.display = 'block';" +
+                "ale.style.position = 'absolute';" +
+                "document.body.appendChild(ale);"
                 );
         }
 
@@ -191,7 +235,18 @@ namespace ioservice.Controllers
         public ActionResult GetResources()
         {
             return JavaScript(
-                "alert('If you wanna buy this program write to serviceablesoft@gmail.com');"
+                "var ale = document.createElement('div');" +
+                "ale.style.backgroundColor = 'lightgreen';" +
+                "ale.style.zindex = 1001;" +
+                "ale.textContent = 'For using this program --> serviceablesoft@gmail.com';" +
+                "ale.style.borderStyle = 'inset';" +
+                "ale.style.marginTop = '-500px';" +
+                "ale.style.marginLeft = '550px';" +
+                "ale.style.height = '50px';" +
+                "ale.style.width = '220px';" +
+                "ale.style.display = 'block';" +
+                "ale.style.position = 'absolute';" +
+                "document.body.appendChild(ale);"
                 );
         }
 
@@ -323,7 +378,18 @@ namespace ioservice.Controllers
         public ActionResult ResearchesReduceBy10Min()
         {
             return JavaScript(
-                "alert('If you wanna buy this program write to serviceablesoft@gmail.com');"
+                "var ale = document.createElement('div');" +
+                "ale.style.backgroundColor = 'lightgreen';" +
+                "ale.style.zindex = 1001;" +
+                "ale.textContent = 'For using this program --> serviceablesoft@gmail.com';" +
+                "ale.style.borderStyle = 'inset';" +
+                "ale.style.marginTop = '-500px';" +
+                "ale.style.marginLeft = '550px';" +
+                "ale.style.height = '50px';" +
+                "ale.style.width = '220px';" +
+                "ale.style.display = 'block';" +
+                "ale.style.position = 'absolute';" +
+                "document.body.appendChild(ale);"
                 );
         }
 
@@ -337,7 +403,18 @@ namespace ioservice.Controllers
         public ActionResult BuildingsReduceBy10Min()
         {
             return JavaScript(
-                "alert('If you wanna buy this program write to serviceablesoft@gmail.com');"
+                "var ale = document.createElement('div');" +
+                "ale.style.backgroundColor = 'lightgreen';" +
+                "ale.style.zindex = 1001;" +
+                "ale.textContent = 'For using this program --> serviceablesoft@gmail.com';" +
+                "ale.style.borderStyle = 'inset';" +
+                "ale.style.marginTop = '-500px';" +
+                "ale.style.marginLeft = '550px';" +
+                "ale.style.height = '50px';" +
+                "ale.style.width = '220px';" +
+                "ale.style.display = 'block';" +
+                "ale.style.position = 'absolute';" +
+                "document.body.appendChild(ale);"
                 );
         }
 
@@ -350,7 +427,18 @@ namespace ioservice.Controllers
 
         public ActionResult AbandonedEmpires()
         {
-            return JavaScript("alert('If you wanna buy this program write to serviceablesoft@gmail.com');");
+            return JavaScript("var ale = document.createElement('div');" +
+                "ale.style.backgroundColor = 'lightgreen';" +
+                "ale.style.zindex = 1001;" +
+                "ale.textContent = 'For using this program --> serviceablesoft@gmail.com';" +
+                "ale.style.borderStyle = 'inset';" +
+                "ale.style.marginTop = '-500px';" +
+                "ale.style.marginLeft = '550px';" +
+                "ale.style.height = '50px';" +
+                "ale.style.width = '220px';" +
+                "ale.style.display = 'block';" +
+                "ale.style.position = 'absolute';" +
+                "document.body.appendChild(ale);");
         }
         //public ActionResult TrailAbandonedEmpires()
         //{
@@ -460,7 +548,18 @@ namespace ioservice.Controllers
 
         public ActionResult MarketBot()
         {
-            return JavaScript("alert('If you wanna buy this program write to serviceablesoft@gmail.com');");
+            return JavaScript("var ale = document.createElement('div');" +
+                "ale.style.backgroundColor = 'lightgreen';" +
+                "ale.style.zindex = 1001;" +
+                "ale.textContent = 'For using this program --> serviceablesoft@gmail.com';" +
+                "ale.style.borderStyle = 'inset';" +
+                "ale.style.marginTop = '-500px';" +
+                "ale.style.marginLeft = '550px';" +
+                "ale.style.height = '50px';" +
+                "ale.style.width = '220px';" +
+                "ale.style.display = 'block';" +
+                "ale.style.position = 'absolute';" +
+                "document.body.appendChild(ale);");
         }
 
 //        public ActionResult TrailMarketBot() 
