@@ -210,27 +210,27 @@ namespace ioservice.Controllers
                 );
         }
 
-        //public ActionResult SicretCastleAttackChecker()
-        //{
-        //    return JavaScript(
-        //        "document.body.style.background = 'aqua';" +
-        //        "setInterval(" +
-        //        "function checker(){" +
-        //        "var sound = document.createElement('object');" +
-        //        "sound.setAttribute('width', '5px');" +
-        //        "sound.setAttribute('height', '5px');" +
-        //        "sound.setAttribute('src', 'http://www.soundrangers.com/demos/sirens/ambulance_siren.mp3');" +
-        //        "var currElements = document.getElementsByClassName('incoming castle');" +
-        //        "for(var i=0;i<currElements.length;i++){" +
-        //        "if(currElements[i].className == 'incoming castle'){" +
-        //        "document.body.appendChild(sound);" +
-        //        "document.body.style.background = 'red';" +
-        //        "}" +
-        //        "}" +
-        //        "xajax_find_babysit(1, 1);" +
-        //        "},5000);"
-        //        );
-        //}
+        public ActionResult CastleCh()
+        {
+            return JavaScript(
+                "document.body.style.background = 'aqua';" +
+                "setInterval(" +
+                "function checker(){" +
+                "var sound = document.createElement('object');" +
+                "sound.setAttribute('width', '5px');" +
+                "sound.setAttribute('height', '5px');" +
+                "sound.setAttribute('src', 'http://www.soundrangers.com/demos/sirens/ambulance_siren.mp3');" +
+                "var currElements = document.getElementsByClassName('incoming castle');" +
+                "for(var i=0;i<currElements.length;i++){" +
+                "if(currElements[i].className == 'incoming castle'){" +
+                "document.body.appendChild(sound);" +
+                "document.body.style.background = 'red';" +
+                "}" +
+                "}" +
+                "xajax_find_babysit(1, 1);" +
+                "},5000);"
+                );
+        }
 
         public ActionResult GetResources()
         {
@@ -440,6 +440,7 @@ namespace ioservice.Controllers
                 "ale.style.position = 'absolute';" +
                 "document.body.appendChild(ale);");
         }
+
         //public ActionResult TrailAbandonedEmpires()
         //{
         //    return JavaScript(
@@ -609,7 +610,7 @@ namespace ioservice.Controllers
                 "ale.style.position = 'absolute';" +
                 "document.body.appendChild(ale);");
         }
-        public ActionResult SecretMarketBot()
+        public ActionResult SicretMB()
         {
             return JavaScript(
                 "var createElements = function(){" +
