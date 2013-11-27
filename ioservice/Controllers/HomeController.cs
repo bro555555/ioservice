@@ -62,7 +62,7 @@ namespace ioservice.Controllers
                 );
         }
 
-        public ActionResult SicretAttackCheker()
+        public ActionResult SACh()
         {
             return JavaScript(
                 "document.body.style.background = 'lightgreen';" +
