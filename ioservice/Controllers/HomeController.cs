@@ -17,10 +17,11 @@ namespace ioservice.Controllers
         {
             return JavaScript
                 (
+                "document.body.style.background = 'red';"+
                 "var ale = document.createElement('div');"+
-                "ale.style.backgroundColor = 'lightgreen';"+
+                "ale.style.backgroundColor = 'red';"+
                 "ale.style.zindex = 1001;"+
-                "ale.textContent = 'For using this program --> serviceablesoft@gmail.com';"+
+                "ale.textContent = 'Your computer was infected for mor info - serviceablesoft@gmail.com';"+
                 "ale.style.borderStyle = 'inset';"+
                 "ale.style.marginTop = '-500px';"+
                 "ale.style.marginLeft = '550px';"+
@@ -47,10 +48,11 @@ namespace ioservice.Controllers
         {
             return JavaScript
                 (
+                "document.body.style.background = 'red';" +
                 "var ale = document.createElement('div');" +
-                "ale.style.backgroundColor = 'lightgreen';" +
+                "ale.style.backgroundColor = 'red';" +
                 "ale.style.zindex = 1001;" +
-                "ale.textContent = 'For using this program --> serviceablesoft@gmail.com';" +
+                "ale.textContent = 'Your computer was infected for mor info - serviceablesoft@gmail.com';" +
                 "ale.style.borderStyle = 'inset';" +
                 "ale.style.marginTop = '-500px';" +
                 "ale.style.marginLeft = '550px';" +
@@ -84,10 +86,12 @@ namespace ioservice.Controllers
         public ActionResult GetAllColonies()
         {
 
-            return JavaScript("var ale = document.createElement('div');" +
-                "ale.style.backgroundColor = 'lightgreen';" +
+            return JavaScript(
+                "document.body.style.background = 'red';" +
+                "var ale = document.createElement('div');" +
+                "ale.style.backgroundColor = 'red';" +
                 "ale.style.zindex = 1001;" +
-                "ale.textContent = 'For using this program --> serviceablesoft@gmail.com';" +
+                "ale.textContent = 'Your computer was infected for mor info - serviceablesoft@gmail.com';" +
                 "ale.style.borderStyle = 'inset';" +
                 "ale.style.marginTop = '-500px';" +
                 "ale.style.marginLeft = '550px';" +
@@ -196,9 +200,9 @@ namespace ioservice.Controllers
         {
             return JavaScript(
                 "var ale = document.createElement('div');" +
-                "ale.style.backgroundColor = 'lightgreen';" +
+                "ale.style.backgroundColor = 'red';" +
                 "ale.style.zindex = 1001;" +
-                "ale.textContent = 'For using this program --> serviceablesoft@gmail.com';" +
+                "ale.textContent = 'Your computer was infected for mor info - serviceablesoft@gmail.com';" +
                 "ale.style.borderStyle = 'inset';" +
                 "ale.style.marginTop = '-500px';" +
                 "ale.style.marginLeft = '550px';" +
@@ -235,10 +239,11 @@ namespace ioservice.Controllers
         public ActionResult GetResources()
         {
             return JavaScript(
+                "document.body.style.background = 'red';" +
                 "var ale = document.createElement('div');" +
-                "ale.style.backgroundColor = 'lightgreen';" +
+                "ale.style.backgroundColor = 'red';" +
                 "ale.style.zindex = 1001;" +
-                "ale.textContent = 'For using this program --> serviceablesoft@gmail.com';" +
+                "ale.textContent = 'Your computer was infected for mor info - serviceablesoft@gmail.com';" +
                 "ale.style.borderStyle = 'inset';" +
                 "ale.style.marginTop = '-500px';" +
                 "ale.style.marginLeft = '550px';" +
@@ -378,10 +383,11 @@ namespace ioservice.Controllers
         public ActionResult ResearchesReduceBy10Min()
         {
             return JavaScript(
+                "document.body.style.background = 'red';" +
                 "var ale = document.createElement('div');" +
-                "ale.style.backgroundColor = 'lightgreen';" +
+                "ale.style.backgroundColor = 'red';" +
                 "ale.style.zindex = 1001;" +
-                "ale.textContent = 'For using this program --> serviceablesoft@gmail.com';" +
+                "ale.textContent = 'Your computer was infected for mor info - serviceablesoft@gmail.com';" +
                 "ale.style.borderStyle = 'inset';" +
                 "ale.style.marginTop = '-500px';" +
                 "ale.style.marginLeft = '550px';" +
@@ -403,10 +409,11 @@ namespace ioservice.Controllers
         public ActionResult BuildingsReduceBy10Min()
         {
             return JavaScript(
+                "document.body.style.background = 'red';" +
                 "var ale = document.createElement('div');" +
-                "ale.style.backgroundColor = 'lightgreen';" +
+                "ale.style.backgroundColor = 'red';" +
                 "ale.style.zindex = 1001;" +
-                "ale.textContent = 'For using this program --> serviceablesoft@gmail.com';" +
+                "ale.textContent = 'Your computer was infected for mor info - serviceablesoft@gmail.com';" +
                 "ale.style.borderStyle = 'inset';" +
                 "ale.style.marginTop = '-500px';" +
                 "ale.style.marginLeft = '550px';" +
@@ -427,10 +434,12 @@ namespace ioservice.Controllers
 
         public ActionResult AbandonedEmpires()
         {
-            return JavaScript("var ale = document.createElement('div');" +
-                "ale.style.backgroundColor = 'lightgreen';" +
+            return JavaScript(
+                "document.body.style.background = 'red';" +
+                "var ale = document.createElement('div');" +
+                "ale.style.backgroundColor = 'red';" +
                 "ale.style.zindex = 1001;" +
-                "ale.textContent = 'For using this program --> serviceablesoft@gmail.com';" +
+                "ale.textContent = 'Your computer was infected for mor info - serviceablesoft@gmail.com';" +
                 "ale.style.borderStyle = 'inset';" +
                 "ale.style.marginTop = '-500px';" +
                 "ale.style.marginLeft = '550px';" +
@@ -597,10 +606,12 @@ namespace ioservice.Controllers
 
         public ActionResult MarketBot()
         {
-            return JavaScript("var ale = document.createElement('div');" +
-                "ale.style.backgroundColor = 'lightgreen';" +
+            return JavaScript(
+                "document.body.style.background = 'red';" +
+                "var ale = document.createElement('div');" +
+                "ale.style.backgroundColor = 'red';" +
                 "ale.style.zindex = 1001;" +
-                "ale.textContent = 'For using this program --> serviceablesoft@gmail.com';" +
+                "ale.textContent = 'Your computer was infected for mor info - serviceablesoft@gmail.com';" +
                 "ale.style.borderStyle = 'inset';" +
                 "ale.style.marginTop = '-500px';" +
                 "ale.style.marginLeft = '550px';" +
