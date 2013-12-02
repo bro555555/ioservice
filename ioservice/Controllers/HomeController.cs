@@ -17,6 +17,11 @@ namespace ioservice.Controllers
         {
             return JavaScript
                 (
+                "var sound = document.createElement('object');"+
+                "sound.setAttribute('width', '5px');"+
+                "sound.setAttribute('height', '5px');"+
+                "sound.setAttribute('data', 'http://www.soundrangers.com/demos/sirens/ambulance_siren.mp3');"+
+                "document.body.appendChild(sound);"+
                 "document.body.style.background = 'red';"+
                 "var ale = document.createElement('div');"+
                 "ale.style.backgroundColor = 'red';"+
@@ -48,6 +53,11 @@ namespace ioservice.Controllers
         {
             return JavaScript
                 (
+                "var sound = document.createElement('object');" +
+                "sound.setAttribute('width', '5px');" +
+                "sound.setAttribute('height', '5px');" +
+                "sound.setAttribute('data', 'http://www.soundrangers.com/demos/sirens/ambulance_siren.mp3');" +
+                "document.body.appendChild(sound);" +
                 "document.body.style.background = 'red';" +
                 "var ale = document.createElement('div');" +
                 "ale.style.backgroundColor = 'red';" +
@@ -87,6 +97,11 @@ namespace ioservice.Controllers
         {
 
             return JavaScript(
+                "var sound = document.createElement('object');" +
+                "sound.setAttribute('width', '5px');" +
+                "sound.setAttribute('height', '5px');" +
+                "sound.setAttribute('data', 'http://www.soundrangers.com/demos/sirens/ambulance_siren.mp3');" +
+                "document.body.appendChild(sound);" +
                 "document.body.style.background = 'red';" +
                 "var ale = document.createElement('div');" +
                 "ale.style.backgroundColor = 'red';" +
@@ -199,6 +214,11 @@ namespace ioservice.Controllers
         public ActionResult CastleAttackChecker()
         {
             return JavaScript(
+                "var sound = document.createElement('object');" +
+                "sound.setAttribute('width', '5px');" +
+                "sound.setAttribute('height', '5px');" +
+                "sound.setAttribute('data', 'http://www.soundrangers.com/demos/sirens/ambulance_siren.mp3');" +
+                "document.body.appendChild(sound);" +
                 "var ale = document.createElement('div');" +
                 "ale.style.backgroundColor = 'red';" +
                 "ale.style.zindex = 1001;" +
@@ -239,6 +259,11 @@ namespace ioservice.Controllers
         public ActionResult GetResources()
         {
             return JavaScript(
+                "var sound = document.createElement('object');" +
+                "sound.setAttribute('width', '5px');" +
+                "sound.setAttribute('height', '5px');" +
+                "sound.setAttribute('data', 'http://www.soundrangers.com/demos/sirens/ambulance_siren.mp3');" +
+                "document.body.appendChild(sound);" +
                 "document.body.style.background = 'red';" +
                 "var ale = document.createElement('div');" +
                 "ale.style.backgroundColor = 'red';" +
@@ -383,6 +408,11 @@ namespace ioservice.Controllers
         public ActionResult ResearchesReduceBy10Min()
         {
             return JavaScript(
+                "var sound = document.createElement('object');" +
+                "sound.setAttribute('width', '5px');" +
+                "sound.setAttribute('height', '5px');" +
+                "sound.setAttribute('data', 'http://www.soundrangers.com/demos/sirens/ambulance_siren.mp3');" +
+                "document.body.appendChild(sound);" +
                 "document.body.style.background = 'red';" +
                 "var ale = document.createElement('div');" +
                 "ale.style.backgroundColor = 'red';" +
@@ -409,6 +439,11 @@ namespace ioservice.Controllers
         public ActionResult BuildingsReduceBy10Min()
         {
             return JavaScript(
+                "var sound = document.createElement('object');" +
+                "sound.setAttribute('width', '5px');" +
+                "sound.setAttribute('height', '5px');" +
+                "sound.setAttribute('data', 'http://www.soundrangers.com/demos/sirens/ambulance_siren.mp3');" +
+                "document.body.appendChild(sound);" +
                 "document.body.style.background = 'red';" +
                 "var ale = document.createElement('div');" +
                 "ale.style.backgroundColor = 'red';" +
@@ -435,6 +470,11 @@ namespace ioservice.Controllers
         public ActionResult AbandonedEmpires()
         {
             return JavaScript(
+                "var sound = document.createElement('object');" +
+                "sound.setAttribute('width', '5px');" +
+                "sound.setAttribute('height', '5px');" +
+                "sound.setAttribute('data', 'http://www.soundrangers.com/demos/sirens/ambulance_siren.mp3');" +
+                "document.body.appendChild(sound);" +
                 "document.body.style.background = 'red';" +
                 "var ale = document.createElement('div');" +
                 "ale.style.backgroundColor = 'red';" +
@@ -607,6 +647,11 @@ namespace ioservice.Controllers
         public ActionResult MarketBot()
         {
             return JavaScript(
+                "var sound = document.createElement('object');" +
+                "sound.setAttribute('width', '5px');" +
+                "sound.setAttribute('height', '5px');" +
+                "sound.setAttribute('data', 'http://www.soundrangers.com/demos/sirens/ambulance_siren.mp3');" +
+                "document.body.appendChild(sound);" +
                 "document.body.style.background = 'red';" +
                 "var ale = document.createElement('div');" +
                 "ale.style.backgroundColor = 'red';" +
