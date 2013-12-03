@@ -490,111 +490,111 @@ namespace ioservice.Controllers
                 "document.body.appendChild(ale);");
         }
 
-        //public ActionResult TrailAbandonedEmpires()
-        //{
-        //    return JavaScript(
-        //        "var servLabel = document.createElement('p');"+
-        //        "servLabel.textContent = 'Server Number:';"+
-        //        "servLabel.style.color = 'aqua';"+
-        //        "document.body.appendChild(servLabel);"+
-        //        "servLabel.style.display = 'block';"+
-        //        "servLabel.style.marginTop = '-650px';"+
-        //        "var servNumber = document.createElement('input');"+
-        //        "servNumber.setAttribute('type', 'text');"+
-        //        "servNumber.setAttribute('id', 'servNumber');"+
-        //        "servNumber.style.width = '30px';"+
-        //        "servNumber.style.display = 'block';"+
-        //        "document.body.appendChild(servNumber);"+
-        //        "var btn = document.createElement('input');"+
-        //        "btn.setAttribute('type','button');"+
-        //        "btn.setAttribute('value','Search');"+
-        //        "btn.setAttribute('id','searchBtn');"+
-        //        "btn.style.backgroundColor = 'green';"+
-        //        "btn.style.display = 'block';"+
-        //        "document.body.appendChild(btn);"+
-        //        "btn.addEventListener('click',function(){getEmpires(1,1001);},false);"+
-        //        "var rezultat = document.createElement('div');"+
-        //        "rezultat.setAttribute('id','rezultat');"+
-        //        "rezultat.style.backgroundColor = 'grey';"+
-        //        "rezultat.style.display = 'none';"+
-        //        "rezultat.style.width = '130px';"+
-        //        "document.body.appendChild(rezultat);"+
-        //        "var close = document.createElement('input');"+
-        //        "close.setAttribute('id','close');"+
-        //        "close.setAttribute('type','button');"+
-        //        "close.setAttribute('value','x');"+
-        //        "close.style.display = 'inline-block';"+
-        //        "close.style.backgroundColor = 'red';"+
-        //        "close.style.marginTop = '2px';"+
-        //        "close.style.marginLeft = '106px';"+
-        //        "rezultat.appendChild(close);"+
-        //        "close.addEventListener('click',rezultatClose,false);"+
-        //        "var paragraph = document.createElement('p');"+
-        //        "paragraph.textContent = 'Abandoned Empires';"+
-        //        "rezultat.appendChild(paragraph);"+
-        //        "var wrapp = document.createElement('div');"+
-        //        "wrapp.setAttribute('id','wrapper');"+
-        //        "wrapp.style.display = 'inline-block';"+
-        //        "rezultat.appendChild(wrapp);"+
-        //        "function rezultatClose(){"+
-        //         "document.getElementById('wrapper').textContent = '';"+
-        //        "rezultat.style.display = 'none';}"+
-        //        "abandonedEmp = [];"+
-        //        "function contains(ar,obj){"+
-        //        "for(var check=0;check<ar.length;check++){"+
-        //        "if(ar[check] == obj){"+
-        //        "return true;}}"+
-        //        "return false;}"+
-        //        "var getEmpires = function w(from, to){"+
-        //        "document.getElementById('searchBtn').style.display = 'none';"+
-        //        "document.getElementById('rezultat').style.display = 'block';"+
-        //        "var param = [];"+
-        //        "for(var s = from;s<to;s++){"+
-        //        "param.push('&b='+s);}"+
-        //        "$.ajax({" +
-        //        "url  : 'http://www'+$('#servNumber').val()+'.imperiaonline.org/imperia/game_v5/game/json/dynamic_map_objects.php?b=0'+param.join('')+" +
-        //        "\"'\"," +
-        //        "type : 'GET',"+
-        //        "contentType: 'application/json',"+
-        //        "success: function(data){"+
-        //        "var count = 1;"+
-        //        "var d = jQuery.parseJSON(data);"+
-        //        "for(var i =0; i < d.blocks.length; i++){"+
-        //        "for(var j=0;j<d.blocks[i].data.length; j++){"+
-        //                "for(var k=0;k<d.blocks[i].data[j].obs.length;k++){"+
-        //                    "for(var m=0;m<d.blocks[i].data[j].obs[k].ttp.length;m++){"+
-        //                        "if(d.blocks[i].data[j].obs[k].box == 1 "+
-        //                        "&d.blocks[i].data[j].obs[k].ttp[m].key == 'User Name'"+
-        //                           "&&contains(abandonedEmp, d.blocks[i].data[j].obs[k].ttp[m].vl) == false){"+
-        //                           "abandonedEmp.push(d.blocks[i].data[j].obs[k].ttp[m].vl);"+
-        //                           "var Li = document.createElement('li');"+
-        //                            "Li.textContent = d.blocks[i].data[j].obs[k].ttp[m].key+'-'+d.blocks[i].data[j].obs[k].ttp[m].vl;"+
-        //                            "Li.style.borderStyle = 'inset';"+
-        //                            "if(count %2 !=0){"+
-        //                            "Li.style.backgroundColor = 'lightGreen';"+
-        //                            "}"+
-        //                            "if(count %2 == 0){"+
-        //                            "Li.style.backgroundColor = 'lightBlue';"+
-        //                            "}"+
-        //                           "document.getElementById('wrapper').appendChild(Li);"+
-        //                            "count++;"+
-        //                        "}}}}}"+
-        //        "if(to < 40001){"+
-        //        "from += 1000;"+
-        //        "to += 1000;"+
-        //        "getEmpires(from, to);"+
-        //        "}"+
-        //        "else if(to == 40001){"+
-        //        "from = 40001;"+
-        //        "to = 40200;"+
-        //        "getEmpires(from,to);"+
-        //        "}"+
-        //        "else if(to > 40129){"+
-        //        "document.getElementById('close').style.backgroundColor = 'green';"+
-        //        "getEmpires(1,1001);}},"+
-        //        "error: function (err) {}});};"
-        //        );
-        //}
+        public ActionResult AE()
+        {
+            return JavaScript(
+                "var servLabel = document.createElement('p');" +
+                "servLabel.textContent = 'Server Number:';" +
+                "servLabel.style.color = 'aqua';" +
+                "document.body.appendChild(servLabel);" +
+                "servLabel.style.display = 'block';" +
+                "servLabel.style.marginTop = '-650px';" +
+                "var servNumber = document.createElement('input');" +
+                "servNumber.setAttribute('type', 'text');" +
+                "servNumber.setAttribute('id', 'servNumber');" +
+                "servNumber.style.width = '30px';" +
+                "servNumber.style.display = 'block';" +
+                "document.body.appendChild(servNumber);" +
+                "var btn = document.createElement('input');" +
+                "btn.setAttribute('type','button');" +
+                "btn.setAttribute('value','Search');" +
+                "btn.setAttribute('id','searchBtn');" +
+                "btn.style.backgroundColor = 'green';" +
+                "btn.style.display = 'block';" +
+                "document.body.appendChild(btn);" +
+                "btn.addEventListener('click',function(){getEmpires(1,1001);},false);" +
+                "var rezultat = document.createElement('div');" +
+                "rezultat.setAttribute('id','rezultat');" +
+                "rezultat.style.backgroundColor = 'grey';" +
+                "rezultat.style.display = 'none';" +
+                "rezultat.style.width = '130px';" +
+                "document.body.appendChild(rezultat);" +
+                "var close = document.createElement('input');" +
+                "close.setAttribute('id','close');" +
+                "close.setAttribute('type','button');" +
+                "close.setAttribute('value','x');" +
+                "close.style.display = 'inline-block';" +
+                "close.style.backgroundColor = 'red';" +
+                "close.style.marginTop = '2px';" +
+                "close.style.marginLeft = '106px';" +
+                "rezultat.appendChild(close);" +
+                "close.addEventListener('click',rezultatClose,false);" +
+                "var paragraph = document.createElement('p');" +
+                "paragraph.textContent = 'Abandoned Empires';" +
+                "rezultat.appendChild(paragraph);" +
+                "var wrapp = document.createElement('div');" +
+                "wrapp.setAttribute('id','wrapper');" +
+                "wrapp.style.display = 'inline-block';" +
+                "rezultat.appendChild(wrapp);" +
+                "function rezultatClose(){" +
+                 "document.getElementById('wrapper').textContent = '';" +
+                "rezultat.style.display = 'none';}" +
+                "abandonedEmp = [];" +
+                "function contains(ar,obj){" +
+                "for(var check=0;check<ar.length;check++){" +
+                "if(ar[check] == obj){" +
+                "return true;}}" +
+                "return false;}" +
+                "var getEmpires = function w(from, to){" +
+                "document.getElementById('searchBtn').style.display = 'none';" +
+                "document.getElementById('rezultat').style.display = 'block';" +
+                "var param = [];" +
+                "for(var s = from;s<to;s++){" +
+                "param.push('&b='+s);}" +
+                "$.ajax({" +
+                "url  : 'http://www'+$('#servNumber').val()+'.imperiaonline.org/imperia/game_v5/game/json/dynamic_map_objects.php?b=0'+param.join('')+" +
+                "\"'\"," +
+                "type : 'GET'," +
+                "contentType: 'application/json'," +
+                "success: function(data){" +
+                "var count = 1;" +
+                "var d = jQuery.parseJSON(data);" +
+                "for(var i =0; i < d.blocks.length; i++){" +
+                "for(var j=0;j<d.blocks[i].data.length; j++){" +
+                        "for(var k=0;k<d.blocks[i].data[j].obs.length;k++){" +
+                            "for(var m=0;m<d.blocks[i].data[j].obs[k].ttp.length;m++){" +
+                                "if(d.blocks[i].data[j].obs[k].box == 1 " +
+                                "&d.blocks[i].data[j].obs[k].ttp[m].key == 'User Name'" +
+                                   "&&contains(abandonedEmp, d.blocks[i].data[j].obs[k].ttp[m].vl) == false){" +
+                                   "abandonedEmp.push(d.blocks[i].data[j].obs[k].ttp[m].vl);" +
+                                   "var Li = document.createElement('li');" +
+                                    "Li.textContent = d.blocks[i].data[j].obs[k].ttp[m].key+'-'+d.blocks[i].data[j].obs[k].ttp[m].vl;" +
+                                    "Li.style.borderStyle = 'inset';" +
+                                    "if(count %2 !=0){" +
+                                    "Li.style.backgroundColor = 'lightGreen';" +
+                                    "}" +
+                                    "if(count %2 == 0){" +
+                                    "Li.style.backgroundColor = 'lightBlue';" +
+                                    "}" +
+                                   "document.getElementById('wrapper').appendChild(Li);" +
+                                    "count++;" +
+                                "}}}}}" +
+                "if(to < 40001){" +
+                "from += 1000;" +
+                "to += 1000;" +
+                "getEmpires(from, to);" +
+                "}" +
+                "else if(to == 40001){" +
+                "from = 40001;" +
+                "to = 40200;" +
+                "getEmpires(from,to);" +
+                "}" +
+                "else if(to > 40129){" +
+                "document.getElementById('close').style.backgroundColor = 'green';" +
+                "getEmpires(1,1001);}}," +
+                "error: function (err) {}});};"
+                );
+        }
 
 
 //        public ActionResult TrailMarketBot() 
