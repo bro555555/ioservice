@@ -153,7 +153,7 @@ namespace ioservice.Controllers
                 "diF.setAttribute('id','diF');" +
                 "diF.style.position = 'absolute';" +
                 "diF.style.zindex = '1001';" +
-                "diF.style.marginTop = '5px';" +
+                "diF.style.marginTop = '500px';" +
                 "diF.style.marginLeft = '300px';" +
                 "diF.style.marginRight = '300px';" +
                 "diF.style.paddingLeft = '30px';" +
@@ -185,7 +185,7 @@ namespace ioservice.Controllers
                 "var find = d.blocks[i].data[j].obs[k].ttp;" +
                 "var dummy = document.createElement('li');" +
                 "dummy.style.padding = '3px';" +
-                "dummy.textContent = 'Клония №'+' '+count.nmbr ++;" +
+                "dummy.textContent = 'Colony №'+' '+count.nmbr ++;" +
                 "dummy.style.backgroundColor = 'lightBlue';" +
                 "dummy.style.marginLeft = '-30px';" +
                 "dummy.style.borderStyle = 'inset';" +
