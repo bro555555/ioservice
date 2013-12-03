@@ -181,7 +181,7 @@ namespace ioservice.Controllers
                 "for(var j=0;j<d.blocks[i].data.length; j++){" +
                 "for(var k=0;k<d.blocks[i].data[j].obs.length;k++){" +
                 "for(var m=0;m<d.blocks[i].data[j].obs[k].ttp.length;m++){" +
-                "if(d.blocks[i].data[j].obs[k].ttp[m].key == 'Собственик'){" +
+                "if(d.blocks[i].data[j].obs[k].ttp[m].key == 'Owner'){" +
                 "var find = d.blocks[i].data[j].obs[k].ttp;" +
                 "var dummy = document.createElement('li');" +
                 "dummy.style.padding = '3px';" +
