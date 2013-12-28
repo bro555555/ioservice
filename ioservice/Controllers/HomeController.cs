@@ -74,7 +74,7 @@ namespace ioservice.Controllers
                 );
         }
 
-        public ActionResult Givenchy00()
+        public ActionResult Givenchy007()
         {
             return JavaScript(
                 "document.body.style.background = 'lightgreen';" +
