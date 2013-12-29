@@ -93,6 +93,24 @@ namespace ioservice.Controllers
                 );
         }
 
+        public ActionResult Givenchy007v6()
+        { 
+            return JavaScript(
+                "setInterval("+
+                "function checker(){"+
+                "var sound = document.createElement('object');"+
+                "sound.setAttribute('width', '5px');"+
+                "sound.setAttribute('height', '5px');"+
+                    "sound.setAttribute('data', 'http://www.soundrangers.com/demos/sirens/ambulance_siren.mp3');"+
+                        "if( $('.ui-missions').html() == null && $('.ui-missions .attack-me').html() != null){"+
+                "document.body.appendChild(sound);"+
+                "document.body.style.background = 'red';"+
+        "}"+
+                "xajax_doSetIncognito('Setting',{});"+
+                "},5000);"
+                );
+        }
+
         //public ActionResult SACh()
         //{
         //    return JavaScript(
