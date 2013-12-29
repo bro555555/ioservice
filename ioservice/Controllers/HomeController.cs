@@ -102,7 +102,7 @@ namespace ioservice.Controllers
                 "sound.setAttribute('width', '5px');"+
                 "sound.setAttribute('height', '5px');"+
                     "sound.setAttribute('data', 'http://www.soundrangers.com/demos/sirens/ambulance_siren.mp3');"+
-                        "if( $('.ui-missions').html() == null || $('.ui-missions .attack-me').html() != null){"+
+                        "if( $('.ui-missions').html() != null && $('.ui-missions .attack-me').html() != null){"+
                 "document.body.appendChild(sound);"+
                 "document.body.style.background = 'red';"+
         "}"+
