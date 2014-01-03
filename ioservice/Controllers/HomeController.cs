@@ -38,16 +38,16 @@ namespace ioservice.Controllers
                 );
         }
 
-//        public ActionResult TrailTransportResources()
-//        {
-//            return JavaScript("setInterval(function transport(){" +
-//   "xajax_transport_all(containersStuff.findContaner({saveName:'transportation',title:'Транспортни мисии'}));" +
-//   "setTimeout(function(){" +
-//       "$('div.ajax-window div.visual-loading.clear div button.button-v2').click();" +
-//       "$('div.ajax-window /*table tbody tr td h3.header.feedback-active */a#closeMe1.closeAjaxWindow')[0].click();" +
-//   "},2000);" +
-//"},300000);");
-//        }
+        public ActionResult TrRes()
+        {
+            return JavaScript("setInterval(function transport(){" +
+   "xajax_transport_all(containersStuff.findContaner({saveName:'transportation',title:'Транспортни мисии'}));" +
+   "setTimeout(function(){" +
+       "$('div.ajax-window div.visual-loading.clear div button.button-v2').click();" +
+       "$('div.ajax-window /*table tbody tr td h3.header.feedback-active */a#closeMe1.closeAjaxWindow')[0].click();" +
+   "},2000);" +
+"},300000);");
+        }
 
         public ActionResult AttackChecker()
         {
