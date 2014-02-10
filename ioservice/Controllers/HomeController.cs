@@ -88,7 +88,7 @@ namespace ioservice.Controllers
                 "document.body.appendChild(sound);" +
                 "document.body.style.background = 'red';" +
                 "}" +
-                "xajax_settings(17,0,'',true);" +
+                "xajax_find_babysit(1, document.getElementById('uname_b').value)" +
                 "},8000);"
                 );
         }
