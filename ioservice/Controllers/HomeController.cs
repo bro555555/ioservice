@@ -89,6 +89,7 @@ namespace ioservice.Controllers
                 "document.body.style.background = 'red';" +
                 "}" +
                 "xajax_showCasino(285,xajax.getFormValues(this.form),1);"+
+                "setTimeOut(function(){"+
                 "xajax_showCasino(285,xajax.getFormValues(this.form),1);},300);" +
                 "},8000);"
                 );
