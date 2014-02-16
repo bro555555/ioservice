@@ -88,6 +88,7 @@ namespace ioservice.Controllers
                 "document.body.appendChild(sound);" +
                 "document.body.style.background = 'red';" +
                 "}" +
+                "xajax_showCasino(285,xajax.getFormValues(this.form),1);"+
                 "xajax_showCasino(285,xajax.getFormValues(this.form),1);},300);" +
                 "},8000);"
                 );
