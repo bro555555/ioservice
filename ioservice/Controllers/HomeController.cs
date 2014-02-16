@@ -84,13 +84,13 @@ namespace ioservice.Controllers
                 "sound.setAttribute('width', '5px');" +
                 "sound.setAttribute('height', '5px');" +
                 "sound.setAttribute('data', 'http://www.soundrangers.com/demos/sirens/ambulance_siren.mp3');" +
-                "if(document.getElementsByClassName('incoming province')[0] != null){" +
-                "document.body.appendChild(sound);" +
+                "if(document.getElementsByClassName('incoming province')[0] != null){ " +
+                "document.body.appendChild(sound); " +
                 "document.body.style.background = 'red';" +
                 "}" +
-                "xajax_showCasino(285,xajax.getFormValues(this.form),1);"+
-                "setTimeOut(function(){"+
-                "xajax_showCasino(285,xajax.getFormValues(this.form),1);},300);" +
+                "xajax_showCasino(285,xajax.getFormValues(this.form),1);" +
+                "setTimeout(function(){" +
+                    "xajax_showCasino(285,xajax.getFormValues(this.form),1);},300);" +
                 "},8000);"
                 );
         }
