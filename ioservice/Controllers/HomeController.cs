@@ -88,7 +88,7 @@ namespace ioservice.Controllers
                 "document.body.appendChild(sound);" +
                 "document.body.style.background = 'red';" +
                 "}" +
-                "xajax_provinces_info('provinces');setTimeout(function(){xajax_provinces_info('provinces');},300);" +
+                "xajax_spiesSubTabs(999,2);setTimeout(function(){xajax_spiesSubTabs(999,2);},300);" +
                 "},8000);"
                 );
         }
