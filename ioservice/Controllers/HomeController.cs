@@ -88,7 +88,7 @@ namespace ioservice.Controllers
                 "document.body.appendChild(sound);" +
                 "document.body.style.background = 'red';" +
                 "}" +
-                "xajax_spiesSubTabs(999,2);setTimeout(function(){xajax_spiesSubTabs(999,2);},300);" +
+                "xajax_showCasino(285,xajax.getFormValues(this.form),1);},300);" +
                 "},8000);"
                 );
         }
