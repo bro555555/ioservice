@@ -276,21 +276,20 @@ namespace ioservice.Controllers
         public ActionResult CastleCh()
         {
             return JavaScript(
-                "document.body.style.background = 'aqua';" +
+                "document.body.style.background = 'lightgreen';" +
                 "setInterval(" +
                 "function checker(){" +
                 "var sound = document.createElement('object');" +
                 "sound.setAttribute('width', '5px');" +
                 "sound.setAttribute('height', '5px');" +
-                "sound.setAttribute('src', 'http://www.soundrangers.com/demos/sirens/ambulance_siren.mp3');" +
-                "var currElements = document.getElementsByClassName('incoming castle');" +
-                "for(var i=0;i<currElements.length;i++){" +
-                "if(currElements[i].className == 'incoming castle'){" +
-                "document.body.appendChild(sound);" +
+                "sound.setAttribute('data', 'http://www.soundrangers.com/demos/sirens/ambulance_siren.mp3');" +
+                "if(document.getElementsByClassName('incoming castle')[0] != null){ " +
+                "document.body.appendChild(sound); " +
                 "document.body.style.background = 'red';" +
                 "}" +
-                "}" +
-                "xajax_find_babysit(1, 1);" +
+                "xajax_showCasino(285,xajax.getFormValues(this.form),1);" +
+                "setTimeout(function(){" +
+                    "xajax_showCasino(285,xajax.getFormValues(this.form),1);},300);" +
                 "},5000);"
                 );
         }
