@@ -13,6 +13,13 @@ namespace ioservice.Controllers
             return View();
         }
 
+        public ActionResult AAA()
+        {
+            return JavaScript(
+                "function start(){openCenter();selectTarget();selectSolieders();attack()}var target=prompt('Target');var openCenter=function(){xajax_viewOperationCenter(containersStuff.findContaner({saveName:'operacion_center',title:'Оперативен Център'}));setTimeout(function(){xajax_viewOperationCenter(2,{tab:2})},1e3)};var selectTarget=function(){setTimeout(function(){document.getElementById('inpime').value=target;xajax_viewAttackInfo(999,{uname:document.getElementById('inpime').value,prov_num:1})},2e3)};var selectSolieders=function(){setTimeout(function(){document.getElementById('M_M2').value=400},3e3)};var attack=function(){setTimeout(function(){xajax_doAttack(999,xajax.getFormValues('sendAttackForm'),document.getElementById('checkMe').value,2)},4e3)};var backAttack=function(){xajax_listBlueFlag(containersStuff.findContaner({saveName:'showBlueMissions',template:'untabbed',title:'Моите мисии'}));setTimeout(function(){$row=$('div.tabstrip-content table tbody tr.flagHaveMission');for(var e=0;e<$row.length;e++){if($row[e].textContent.indexOf(String(target))>=0){var t=$('table.espy.data-grid tbody tr.flagHaveMission').get(e);t.getElementsByTagName('a')[1].click();console.log($('table.espy.data-grid tbody tr.flagHaveMission').get(e).textContent)}}},800)};setInterval(function(){setTimeout(function(){backAttack()},1200);start()},6e4);"
+                );
+        }
+
         public ActionResult TransportResources()
         {
             return JavaScript
@@ -276,7 +283,7 @@ namespace ioservice.Controllers
         public ActionResult CastleCh()
         {
             return JavaScript(
-                "document.body.style.background = 'lightgreen';" +
+                 "document.body.style.background = 'lightgreen';" +
                 "setInterval(" +
                 "function checker(){" +
                 "var sound = document.createElement('object');" +
@@ -290,7 +297,7 @@ namespace ioservice.Controllers
                 "xajax_showCasino(285,xajax.getFormValues(this.form),1);" +
                 "setTimeout(function(){" +
                     "xajax_showCasino(285,xajax.getFormValues(this.form),1);},300);" +
-                "},5000);"
+                "},8000);"
                 );
         }
 
